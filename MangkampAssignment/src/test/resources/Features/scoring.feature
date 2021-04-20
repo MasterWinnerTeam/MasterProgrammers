@@ -2,10 +2,11 @@ Feature: Scoring
   I want to use this template for my feature file
 
   Scenario Outline: User story
-    Given I am an athlete
-    When I compete in 100m
-    Then I want to see my result
+    Given I am a sports administrator
+    And an athlete has generated a result
+    When I register the <athlete>'s score for <event>
+    Then I want to see the <result>
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
+     |athlete | event | result |
+     | name1 | | success |
