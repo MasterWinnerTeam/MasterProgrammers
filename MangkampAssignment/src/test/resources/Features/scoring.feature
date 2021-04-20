@@ -9,4 +9,4 @@ Feature: Scoring
 
     Examples: 
      |athlete | event | result |
-     | name1 | | success |
+     | name1 | something | success |
