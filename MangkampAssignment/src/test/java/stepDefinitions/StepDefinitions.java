@@ -5,19 +5,22 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class StepDefinitions {
-
-		@Given("I am a sports adminstraitor")
-		public void i_am_a_sports_adminstraitor() {
+		String input = "";
+	
+		@Given("I am a sports administrator")
+		public void i_am_a_sports_administrator() {
 		    System.out.println("First");
 		}
 
-		@When("I register an name1")
-		public void i_register_an_name1() {
+		@When("I register an {athlete}")
+		public void i_register_an_name1(String name1) {
 			System.out.println("First");
+			input = name1;
+			//input av namn på atlet
 		}
 
-		@When("I want to register their {int}")
-		public void i_want_to_register_their(Integer int1) {
+		@When("I register their {int}")
+		public void i_register_their(Integer int1) {
 			System.out.println("First");
 		}
 		
