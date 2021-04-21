@@ -3,9 +3,10 @@ Feature: Scoring
 
   Scenario Outline: User story
     Given I am a sports administrator
-    And an athlete has generated a result
-    When I register the <athlete>'s score for <event>
+    And an <athlete> has generated a result
+    When I register the athlete's score for the <event>
     Then I want to see the <result>
+   # Then I want to see the total result
 
     Examples: 
      |athlete | event | result |
