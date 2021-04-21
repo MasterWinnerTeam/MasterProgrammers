@@ -3,7 +3,8 @@ Feature: Scoring
 
   Scenario Outline: User story
     Given I am a sports adminstraitor
-    When I register an <athlete> and their <result>
+    When I register an <athlete> 
+    And I want to register their <result>
     Then I want to see the total score
 
     Examples: 
