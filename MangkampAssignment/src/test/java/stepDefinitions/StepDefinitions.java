@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 
 public class StepDefinitions {
 		String input = "";
+		double result;
 	
 		@Given("I am a sports administrator")
 		public void i_am_a_sports_administrator() {
@@ -22,12 +23,20 @@ public class StepDefinitions {
 		@When("I register their {int}")
 		public void i_register_their(Integer int1) {
 			System.out.println("First");
+			//ekvation för B-P
+			
+			result = Math.pow(1.81, (25.4347(18-10)));
+			//Skriver in poängen från grenen
 		}
 		
 		@Then("I want to see the total score")
 		public void i_want_to_see_the_total_score() {
 			System.out.println("First");
+			
+			//Int Poäng = (A(B-P)^C)
+			//Uträkning sker från sparade värden och vi får poängen sparade
 		}
 		
+		//metoder här???
 }
 
