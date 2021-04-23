@@ -33,6 +33,17 @@ public class StepDefinitions {
 			//input = name1;
 			//input av namn på atlet
 		}
+		
+		@When("I also register their {string}")
+		public void i_also_register_their(String string) {
+		//sporten if-sats bra
+			if (string.equals("track")){
+				//something
+			}
+			if (string.equals("field")){
+				//something
+			}
+		}
 
 		@When("I register their {int}")
 		public void i_register_their(Integer int1) {
@@ -59,7 +70,6 @@ public class StepDefinitions {
 			//Int Poäng = (A(B-P)^C)
 			//Uträkning sker från sparade värden och vi får poängen sparade
 		}
-}
-		//metoder här???
+		//metoder
 		
-
+}

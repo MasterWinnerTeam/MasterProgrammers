@@ -4,9 +4,10 @@ Feature: Scoring
   Scenario Outline: User story
     Given I am a sports administrator
     When I register an <athlete> 
+    And I also register their <sport>
     And I register their <result>
     Then I want to see the total score
 
     Examples: 
-     |athlete| result |
-     | "Lars" | 10 | # Lars, 10 sekunder
+     |athlete| sport | result |
+     | "Lars" | "track" | 10 | # Lars, 10 sekunder
