@@ -9,4 +9,4 @@ Feature: Scoring
 
     Examples: 
      |athlete| result |
-     | name1 | 10 |
+     | Lars | 10 | # Lars, 10 sekunder

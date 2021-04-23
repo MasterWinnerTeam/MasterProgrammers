@@ -16,6 +16,7 @@ public class StepDefinitions {
 		@When("I register an {athlete}")
 		public void i_register_an_name1(String name1) {
 			System.out.println("First");
+			
 			input = name1;
 			//input av namn på atlet
 		}
@@ -24,8 +25,17 @@ public class StepDefinitions {
 		public void i_register_their(Integer int1) {
 			System.out.println("First");
 			//ekvation för B-P
+			double A = 25.4347;
+			double B = 18;
+			double C = 1.81;
+			double x = B-int1;
+			double i = Math.pow(x, C);
+			double resultekv = i*A;
+			int result = (int)resultekv;
+			System.out.println(result);
 			
-			result = Math.pow(1.81, (25.4347(18-10)));
+			
+		//	result = Math.pow(1.81, (25.4347(18-10)));
 			//Skriver in poängen från grenen
 		}
 		
