@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import java.util.Scanner;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,10 +16,21 @@ public class StepDefinitions {
 		}
 
 		@When("I register an {athlete}")
-		public void i_register_an_name1(String name1) {
+		public void i_register_an(String name1) {
 			System.out.println("First");
+			Scanner scan = new Scanner(System.in);
+
+			System.out.print("How many participants? ");
+			int numParticipants = scan.nextInt();
+			Participants[] newParticipants = new Participants[numParticipants];
+
+			for (int i = 0; i < numParticipants; i++) {
+				System.out.print("Name the participants " + (i + 1) + ": ");
+				String name = scan.next();
+				newParticipants[i] = new Participants(name);
+				}
 			
-			input = name1;
+			//input = name1;
 			//input av namn på atlet
 		}
 
@@ -46,7 +59,7 @@ public class StepDefinitions {
 			//Int Poäng = (A(B-P)^C)
 			//Uträkning sker från sparade värden och vi får poängen sparade
 		}
-		
-		//metoder här???
 }
+		//metoder här???
+		
 
