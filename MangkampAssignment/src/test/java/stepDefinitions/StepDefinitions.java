@@ -14,9 +14,9 @@ public class StepDefinitions {
 		public void i_am_a_sports_administrator() {
 		    System.out.println("First");
 		}
-
-		@When("I register an {athlete}")
-		public void i_register_an(String name1) {
+		
+		@When("I register an {string}")
+		public void i_register_an(String string) {
 			System.out.println("First");
 			Scanner scan = new Scanner(System.in);
 
