@@ -10,4 +10,5 @@ Feature: Scoring
 
     Examples: 
      |athlete| sport | result |
-     | "Lars" | "track" | 10 | # Lars, 10 sekunder
+     | "" | "track" | 10 | # Lars, 10 sekunder
+     | "" | "field" | 5 | # Lasse (Åberg), 5 meter
