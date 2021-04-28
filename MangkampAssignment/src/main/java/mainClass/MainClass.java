@@ -13,9 +13,11 @@ public class MainClass {
 		System.out.print("How many participants? ");
 		int numParticipants = scan.nextInt();
 		Participants[] newParticipants = new Participants[numParticipants];
-
+		
+		System.out.println("Example: Pär Gren SWE");
 		for (int i = 0; i < numParticipants; i++) {
-			System.out.print("Name the participants " + (i + 1) + ": ");
+			System.out.print("Name of participant " + (i + 1) + " and nationality: ");
+			
 			String name = scan.next();
 			newParticipants[i] = new Participants(name);
 			}
