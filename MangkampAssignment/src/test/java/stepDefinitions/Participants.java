@@ -10,6 +10,5 @@ public class Participants {
 		public String getName() {
 			return name;
 		}
-
 	}
 
