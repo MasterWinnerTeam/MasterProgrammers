@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class MainClass {
 
 	public static void main(String[] args) {
+	//	String[][] eventVariables = {{"25", "24","1"}, {
+		
 		System.out.println("Welcome to the olympic games!");
 		Scanner scan = new Scanner(System.in);
 
@@ -22,8 +24,13 @@ public class MainClass {
 			newParticipants[i] = new Participants(name);
 			}
 			for(int i = 0; i < numParticipants; i++) {
-			System.out.println(newParticipants [i].getName());
-		}
+			System.out.println((i + 1) + " " + newParticipants [i].getName());
+			}
+			System.out.println("Insert result");
+			double result = scan.nextDouble();
+			}
 	}
+	
 
-}
+
+
