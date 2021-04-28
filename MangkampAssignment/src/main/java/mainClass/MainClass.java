@@ -20,7 +20,7 @@ public class MainClass {
 		for (int i = 0; i < numParticipants; i++) {
 			System.out.print("Name of participant " + (i + 1) + " and nationality: ");
 			
-			String name = scan.next();
+			String name = scan.nextLine();
 			newParticipants[i] = new Participants(name);
 			}
 			for(int i = 0; i < numParticipants; i++) {
@@ -28,9 +28,9 @@ public class MainClass {
 			}
 			System.out.println("Insert result");
 			double result = scan.nextDouble();
-			}
+
 	}
-	
+	}
 
 
 
