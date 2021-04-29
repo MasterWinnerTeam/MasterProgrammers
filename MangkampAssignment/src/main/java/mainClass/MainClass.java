@@ -37,6 +37,17 @@ public class MainClass {
 				int result = (int) resultekv;
 				System.out.println(result);
 			}
+				for (int i = 0; i < numParticipants; i++) {
+				System.out.print("Insert result for " +newParticipants[i].getName() + ": ");
+				double resultEvent2 = scan.nextDouble();
+				double A = 1.84523;
+				double B = 75;
+				double C = 1.348;
+				double x = resultEvent2 - B;
+				double y = Math.pow(x, C);
+				double resultekv = y*A;
+				int result = (int)resultekv;
+				System.out.println(result);
 		}
 	}
 }
