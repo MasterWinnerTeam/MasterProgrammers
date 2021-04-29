@@ -18,13 +18,14 @@ public class MainClass {
 		for (int i = 0; i < numParticipants; i++) {
 			System.out.print("Name of participant " + (i + 1) + " and nationality: ");
 			
-			String name = scan.next();
+			String name = scan.next() + scan.nextLine();
 			newParticipants[i] = new Participants(name);
 			}
 			for(int i = 0; i < numParticipants; i++) {
 			System.out.println((i + 1) + " " + newParticipants [i].getName());
 			}
 			{
+				System.out.println("Track");
 				for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Insert result for " +newParticipants[i].getName() + ": ");
 				double resultEvent = scan.nextDouble();
@@ -37,6 +38,7 @@ public class MainClass {
 				int result = (int) resultekv;
 				System.out.println(result);
 			}
+				System.out.println("Field");
 				for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Insert result for " +newParticipants[i].getName() + ": ");
 				double resultEvent2 = scan.nextDouble();
@@ -48,6 +50,7 @@ public class MainClass {
 				double resultekv = y*A;
 				int result = (int)resultekv;
 				System.out.println(result);
+			}
 		}
 	}
 }
