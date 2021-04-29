@@ -18,7 +18,7 @@ public class MainClass {
 		for (int i = 0; i < numParticipants; i++) {
 			System.out.print("Name of participant " + (i + 1) + " and nationality: ");
 			
-			String name = scan.nextLine();
+			String name = scan.next();
 			newParticipants[i] = new Participants(name);
 			}
 			for(int i = 0; i < numParticipants; i++) {
