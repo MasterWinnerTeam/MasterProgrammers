@@ -27,7 +27,7 @@ public class MainClass {
 			{
 				System.out.println("Track");
 				for (int i = 0; i < numParticipants; i++) {
-				System.out.print("Insert result for " +newParticipants[i].getName() + ": ");
+				System.out.print("Insert result in seconds for " +newParticipants[i].getName() + ": ");
 				double resultEvent = scan.nextDouble();
 				double A = 25.4347;
 				double B = 18;
@@ -40,7 +40,7 @@ public class MainClass {
 			}
 				System.out.println("Field");
 				for (int i = 0; i < numParticipants; i++) {
-				System.out.print("Insert result for " +newParticipants[i].getName() + ": ");
+				System.out.print("Insert result in centimeters for " +newParticipants[i].getName() + ": ");
 				double resultEvent2 = scan.nextDouble();
 				double A = 1.84523;
 				double B = 75;
