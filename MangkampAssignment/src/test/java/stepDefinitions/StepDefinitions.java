@@ -27,7 +27,8 @@ public class StepDefinitions {
 			for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Name the participants " + (i + 1) + ": ");
 				String name = scan.next();
-				newParticipants[i] = new Participants(name);
+				Participants.Participants(name);
+				System.out.println(newParticipants [i]);
 				}
 			
 			//input = name1;
@@ -50,7 +51,7 @@ public class StepDefinitions {
 
 		@When("I register their {int}")
 		public void i_register_their(Integer int1) {
-			System.out.println("First");
+			System.out.println(newParticipants [1]);
 			//ekvation för B-P (7-kamp)!!
 			if(isTrack = true) {
 			double A = 25.4347;
