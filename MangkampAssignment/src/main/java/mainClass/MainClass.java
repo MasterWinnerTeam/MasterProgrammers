@@ -26,7 +26,6 @@ public class MainClass {
 			}
 			{
 				ResultCounter counter =new ResultCounter();
-				int result;
 				
 				System.out.println("Track");
 				for (int i = 0; i < numParticipants; i++) {
