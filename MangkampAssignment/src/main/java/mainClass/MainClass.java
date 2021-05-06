@@ -25,17 +25,14 @@ public class MainClass {
 			System.out.println((i + 1) + " " + newParticipants [i].getName());
 			}
 			{
+				ResultCounter counter =new ResultCounter();
+				int result;
+				
 				System.out.println("Track");
 				for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Insert result in seconds for " +newParticipants[i].getName() + ": ");
 				double resultEvent = scan.nextDouble();
-				double A = 25.4347;
-				double B = 18;
-				double C = 1.81;
-				double x = B - resultEvent;
-				double y = Math.pow(x, C);
-				double resultekv = y * A;
-				int result = (int) resultekv;
+				counter.fourHundredMD(resultEvent);
 				System.out.println(result);
 			}
 				System.out.println("Field");
