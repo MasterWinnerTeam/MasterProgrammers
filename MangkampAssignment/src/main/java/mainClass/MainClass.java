@@ -26,31 +26,22 @@ public class MainClass {
 			System.out.println((i + 1) + " " + newParticipants [i].getName());
 			}
 			{
+				ResultCounter counter =new ResultCounter();
+				int result;
+				
 				System.out.println("Track");
 				for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Insert result in seconds for " +newParticipants[i].getName() + ": ");
 				double resultEvent = scan.nextDouble();
-				double A = 25.4347;
-				double B = 18;
-				double C = 1.81;
-				double x = B - resultEvent;
-				double y = Math.pow(x, C);
-				double resultekv = y * A;
-				int result = (int) resultekv;
-				System.out.println(result);
+				counter.fourHundredMD(resultEvent);
+				System.out.println(counter.getResult());
 			}
 				System.out.println("Field");
 				for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Insert result in centimeters for " +newParticipants[i].getName() + ": ");
-				double resultEvent2 = scan.nextDouble();
-				double A = 1.84523;
-				double B = 75;
-				double C = 1.348;
-				double x = resultEvent2 - B;
-				double y = Math.pow(x, C);
-				double resultekv = y*A;
-				int result = (int)resultekv;
-				System.out.println(result);
+				double resultEvent = scan.nextDouble();
+				counter.javelinThrowH(resultEvent);
+				System.out.println(counter.getResult());
 			}
 		}
 	}
