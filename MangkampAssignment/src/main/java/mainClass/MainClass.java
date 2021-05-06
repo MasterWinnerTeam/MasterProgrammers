@@ -33,20 +33,14 @@ public class MainClass {
 				System.out.print("Insert result in seconds for " +newParticipants[i].getName() + ": ");
 				double resultEvent = scan.nextDouble();
 				counter.fourHundredMD(resultEvent);
-				System.out.println(result);
+				System.out.println(counter.getResult());
 			}
 				System.out.println("Field");
 				for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Insert result in centimeters for " +newParticipants[i].getName() + ": ");
-				double resultEvent2 = scan.nextDouble();
-				double A = 1.84523;
-				double B = 75;
-				double C = 1.348;
-				double x = resultEvent2 - B;
-				double y = Math.pow(x, C);
-				double resultekv = y*A;
-				int result = (int)resultekv;
-				System.out.println(result);
+				double resultEvent = scan.nextDouble();
+				counter.javelinThrowH(resultEvent);
+				System.out.println(counter.getResult());
 			}
 		}
 	}
