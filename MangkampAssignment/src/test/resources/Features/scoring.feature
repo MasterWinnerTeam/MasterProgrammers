@@ -1,5 +1,5 @@
 Feature: Scoring
-  I want to use this template for my feature file
+I want to use this template for my feature file
 
   Scenario Outline: User story
     Given I am a sports administrator

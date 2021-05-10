@@ -26,21 +26,25 @@ public class MainClass {
 			System.out.println((i + 1) + " " + newParticipants [i].getName());
 			}
 			{
-				ResultCounter counter =new ResultCounter();
+				ResultCounter counter = new ResultCounter();
+				int gender = 1;
 				
+				if (gender == 1) {
 				System.out.println("Track");
 				for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Insert result in seconds for " +newParticipants[i].getName() + ": ");
 				double resultEvent = scan.nextDouble();
 				counter.fourHundredMD(resultEvent);
 				System.out.println(counter.getResult());
-			}
+				}
+			} else {
 				System.out.println("Field");
 				for (int i = 0; i < numParticipants; i++) {
 				System.out.print("Insert result in centimeters for " +newParticipants[i].getName() + ": ");
 				double resultEvent = scan.nextDouble();
 				counter.javelinThrowH(resultEvent);
 				System.out.println(counter.getResult());
+				}
 			}
 		}
 	}
